@@ -94,14 +94,6 @@
           max(1.25rem, env(safe-area-inset-left));
       }
 
-      .monogram {
-        width: 9.5rem;
-        height: auto;
-        margin-bottom: 2.25rem;
-        filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.45))
-          drop-shadow(0 -1px 0 rgba(255, 245, 235, 0.06));
-      }
-
       .brand {
         margin: 0;
         font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
@@ -186,9 +178,6 @@
         .reveal:nth-child(4) {
           animation-delay: 0.45s;
         }
-        .reveal:nth-child(5) {
-          animation-delay: 0.6s;
-        }
         @keyframes reveal {
           to {
             opacity: 1;
@@ -199,10 +188,6 @@
 
       /* Tablet and up */
       @media (min-width: 640px) {
-        .monogram {
-          width: 12rem;
-          margin-bottom: 2.75rem;
-        }
         .brand {
           font-size: 2.5rem;
           letter-spacing: 0.28em;
@@ -221,10 +206,6 @@
 
       /* Desktop */
       @media (min-width: 1024px) {
-        .monogram {
-          width: 14rem;
-          margin-bottom: 3rem;
-        }
         .brand {
           font-size: 3rem;
         }
@@ -239,10 +220,6 @@
           padding-top: 1.5rem;
           padding-bottom: 1rem;
         }
-        .monogram {
-          width: 6rem;
-          margin-bottom: 1.25rem;
-        }
         .divider {
           margin: 1rem auto;
         }
@@ -251,34 +228,6 @@
   </head>
   <body>
     <main>
-      <svg
-        class="monogram reveal"
-        viewBox="252 132 750 916"
-        role="img"
-        aria-label="Aurora Tobacco monogram"
-      >
-        <defs>
-          <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#d9cdbf" />
-            <stop offset="0.35" stop-color="#a99a8a" />
-            <stop offset="0.6" stop-color="#c7b9aa" />
-            <stop offset="1" stop-color="#857767" />
-          </linearGradient>
-        </defs>
-        <!-- Contrast-stroke oval: thick at the sides, hairline at top and bottom -->
-        <path
-          fill="url(#metal)"
-          fill-rule="evenodd"
-          d="M627 142a365 448 0 1 1 0 896a365 448 0 1 1 0-896z
-               M627 150a318 440 0 1 0 0 880a318 440 0 1 0 0-880z"
-        />
-        <!-- Serif V -->
-        <path
-          fill="url(#metal)"
-          d="M385 400H580V410L548 413L649 728L772 413L742 410V400H862V410L800 413L604 890H596L438 413L385 410Z"
-        />
-      </svg>
-
       <h1 class="brand reveal">Aurora Tobacco Co.</h1>
 
       <div class="divider reveal" aria-hidden="true"><span></span></div>
